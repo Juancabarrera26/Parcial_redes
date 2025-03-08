@@ -38,7 +38,9 @@ En muchas aplicaciones de redes, las señales transmitidas no son simples ondas 
 Si una señal está compuesta por **tres sinusoides** con diferentes frecuencias (\( f_1 \), \( f_2 \), \( f_3 \)), su comportamiento en el **dominio del tiempo** parecerá una onda compleja, con variaciones en amplitud y forma.  
 
 #### * ¿Cómo se ve en el dominio de la frecuencia?**  
-Al aplicar la **Transformada de Fourier**, la señal ya no se ve como una onda en el tiempo, sino como una representación en el **dominio de la frecuencia**. En este caso, aparecerán **tres picos** en la gráfica, cada uno en la posición de su frecuencia respectiva (\( f_1 \), \( f_2 \), \( f_3 \)).  
+Al aplicar la **Transformada de Fourier**, la señal ya no se ve como una onda en el tiempo, sino como una representación en el **dominio de la frecuencia**. En este caso, aparecerán **tres picos** en la gráfica, cada uno en la posición de su frecuencia respectiva: 
+
+(\( f_1 \), \( f_2 \), \( f_3 \))  
 
 Esto es útil porque permite visualizar de manera clara qué frecuencias están presentes en la señal y si hay alguna interferencia que pueda afectar la comunicación. Además, en sistemas de transmisión digital, esta información es clave para filtrar señales no deseadas y optimizar el uso del canal de comunicación.  
 
