@@ -21,7 +21,7 @@ La **Transformada de Fourier** es una herramienta clave para entender cómo viaj
 1. **Optimización del ancho de banda:**  
    En las redes, el ancho de banda disponible es limitado, por lo que es importante aprovecharlo bien. Con la **Transformada de Fourier**, se puede analizar qué frecuencias están siendo utilizadas y cómo distribuirlas de manera eficiente para evitar interferencias.  
 
-2. ** Detección de ruido e interferencias:**  
+2. **Detección de ruido e interferencias:**  
    En la transmisión de datos, las señales pueden sufrir interferencias por otras fuentes cercanas. Con la **Transformada de Fourier**, es posible identificar frecuencias extrañas o no deseadas en una señal y aplicar filtros para eliminarlas, mejorando así la calidad de la comunicación.  
 
 3. **Compresión y procesamiento de señales:**  
