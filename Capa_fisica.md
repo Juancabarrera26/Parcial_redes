@@ -1,8 +1,8 @@
 # **Capa Física - Redes de Computadoras**  
 
-## ** Punto 1: Evaluación de la Capa Física y Transformada de Fourier**  
+## * Punto 1: Evaluación de la Capa Física y Transformada de Fourier**  
 
-### **🔹 Contexto**  
+### *🔹 Contexto**  
 En la **capa física** del modelo OSI, la transmisión de datos se hace a través de señales **analógicas y digitales** que viajan por distintos medios (cables, fibra óptica, ondas de radio, etc.). Para entender cómo estas señales se comportan y cómo se pueden ver afectadas por interferencias o pérdidas de datos, se utilizan herramientas matemáticas como la **Transformada de Fourier**. Esta transformada nos permite analizar las señales en el **dominio de la frecuencia**, lo que es clave para mejorar la transmisión y evitar problemas en la comunicación.  
 
 ---
@@ -11,7 +11,7 @@ En la **capa física** del modelo OSI, la transmisión de datos se hace a travé
 
 La **Transformada de Fourier** (TF) es súper importante en redes de comunicación porque nos ayuda a descomponer cualquier señal en sus **componentes de frecuencia**. En otras palabras, nos permite ver de qué frecuencias está compuesta una señal y cómo se comporta en el espectro de transmisión.  
 
-#### ** Aplicaciones en redes de computadoras:**  
+#### * Aplicaciones en redes de computadoras:**  
 1. **Análisis del ancho de banda:**  
    - Nos permite saber si una señal ocupa más ancho de banda del que debería. Si una señal se sale del rango permitido, podría causar interferencias con otras señales.  
    - También ayuda a optimizar el uso del canal, asegurando que la transmisión sea eficiente.  
