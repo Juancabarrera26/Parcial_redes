@@ -29,7 +29,7 @@ def manejar_cliente(sock_cliente, direccion_cliente):
         print(f"Conexión cerrada con {direccion_cliente}")
 
 def iniciar_servidor():
-    """Inicia el servidor en el puerto 2010 y acepta múltiples clientes."""
+    """Inicia el servidor en el puerto 2010 y acepta clientes simultaneos."""
     sock_servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock_servidor.bind(("0.0.0.0", 2010))  
     sock_servidor.listen(5)  
