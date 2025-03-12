@@ -1,4 +1,4 @@
-Capa Física en Redes de Computadoras
+# Capa Física en Redes de Computadoras
 
 En la capa física del modelo OSI se lleva a cabo la transmisión de datos a través de medios como cables de cobre, fibra óptica y ondas de radio. Esta capa se encarga de enviar bits de forma directa, sin interpretación, lo que implica procesos como la modulación y la codificación. Es fundamental comprender el comportamiento de las señales, ya que estas pueden sufrir degradaciones (por ejemplo, por atenuación o interferencias) que afectan la calidad de la comunicación.
 
@@ -6,7 +6,7 @@ Una de las herramientas matemáticas que resulta indispensable en este análisis
 
 ⸻
 
-Pregunta 1: ¿Cómo contribuye la Transformada de Fourier al análisis de señales en la capa física?
+# Pregunta 1: ¿Cómo contribuye la Transformada de Fourier al análisis de señales en la capa física?
 
 La Transformada de Fourier convierte una señal en función del tiempo, x(t), en su representación en el dominio de la frecuencia, X(f). Esto se expresa matemáticamente como:
 
@@ -27,7 +27,7 @@ En términos prácticos, si se dispone de un canal con un ancho de banda limitad
 
 ⸻
 
-Pregunta 2: Señales compuestas y espectro de frecuencias
+# Pregunta 2: Señales compuestas y espectro de frecuencias
 
 Consideremos una señal que resulta de la suma de tres sinusoides de diferente frecuencia. Esta señal se puede expresar como:
 
