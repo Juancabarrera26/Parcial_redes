@@ -1,48 +1,46 @@
-# **Capa Física - Redes de Computadoras**  
+Capa Física en Redes de Computadoras
 
-En este punto 1 comprenderemos las capacidades del entendimiento que esta enfocado en el análisis de señales dentro de la **capa física** y el uso de la **Transformada de Fourier** para comprender mejor cómo se transmiten los datos en una red.  
+En la capa física del modelo OSI se lleva a cabo la transmisión de datos a través de medios como cables de cobre, fibra óptica y ondas de radio. Esta capa se encarga de enviar bits de forma directa, sin interpretación, lo que implica procesos como la modulación y la codificación. Es fundamental comprender el comportamiento de las señales, ya que estas pueden sufrir degradaciones (por ejemplo, por atenuación o interferencias) que afectan la calidad de la comunicación.
 
-## * Punto 1: Evaluación de la Capa Física y Transformada de Fourier**  
+Una de las herramientas matemáticas que resulta indispensable en este análisis es la Transformada de Fourier, la cual permite descomponer una señal en sus componentes de frecuencia.
 
-### * Contexto**  
-En la **capa física** del modelo **OSI**, los datos se transmiten a través de distintos medios, como cables de cobre, fibra óptica o incluso ondas de radio. Para que la comunicación sea eficiente, es fundamental entender cómo se comportan las señales que transportan la información.  
+⸻
 
-Las señales pueden ser **analógicas o digitales**, y su calidad puede verse afectada por factores como la atenuación, el ruido o la interferencia con otras señales. Para analizar estos aspectos, se usa una herramienta matemática muy importante: la **Transformada de Fourier**.  
+Pregunta 1: ¿Cómo contribuye la Transformada de Fourier al análisis de señales en la capa física?
 
-Esta transformación permite descomponer cualquier señal en sus **componentes de frecuencia**, facilitando su estudio y ayudando a detectar posibles problemas en la transmisión.  
+La Transformada de Fourier convierte una señal en función del tiempo, x(t), en su representación en el dominio de la frecuencia, X(f). Esto se expresa matemáticamente como:
 
----
+X(f) = \int_{-\infty}^{\infty} x(t) \, e^{-j 2 \pi f t} \, dt
 
-### * Pregunta 1: ¿Cómo contribuye la Transformada de Fourier al análisis de señales en la capa física?**  
+Donde:
+	•	X(f) representa la distribución de amplitudes según la frecuencia.
+	•	x(t) es la señal original.
+	•	f indica la frecuencia.
+	•	j es la unidad imaginaria.
 
-La **Transformada de Fourier** es una herramienta clave para entender cómo viajan las señales a través de un canal de comunicación. En lugar de ver una señal solo en función del tiempo, nos permite analizarla en el **dominio de la frecuencia**, lo que facilita detectar problemas y mejorar su transmisión.  
+Esta transformación resulta muy útil porque, al pasar al dominio de la frecuencia, es posible:
+	•	Visualizar y analizar la distribución de energía: Se identifica cuáles son las frecuencias predominantes en la señal.
+	•	Detectar interferencias y ruidos: Por ejemplo, un pico anómalo en el espectro puede indicar la presencia de un ruido que afecta la transmisión.
+	•	Optimizar el uso del ancho de banda: Conociendo la asignación de frecuencias, se pueden diseñar sistemas que maximicen la eficiencia del canal.
 
-#### ** Aplicaciones en redes:**  
-1. **Optimización del ancho de banda:**  
-   En las redes, el ancho de banda disponible es limitado, por lo que es importante aprovecharlo bien. Con la **Transformada de Fourier**, se puede analizar qué frecuencias están siendo utilizadas y cómo distribuirlas de manera eficiente para evitar interferencias.  
+En términos prácticos, si se dispone de un canal con un ancho de banda limitado de B Hz, conocer el espectro permite ajustar la señal para que se utilice de manera óptima ese recurso.
 
-2. **Detección de ruido e interferencias:**  
-   En la transmisión de datos, las señales pueden sufrir interferencias por otras fuentes cercanas. Con la **Transformada de Fourier**, es posible identificar frecuencias extrañas o no deseadas en una señal y aplicar filtros para eliminarlas, mejorando así la calidad de la comunicación.  
+⸻
 
-3. **Compresión y procesamiento de señales:**  
-   En algunos casos, se utilizan técnicas de compresión basadas en la Transformada de Fourier para reducir la cantidad de datos que se transmiten sin perder información importante. Un ejemplo de esto es la compresión de audio y video en formatos como MP3 o JPEG.  
+Pregunta 2: Señales compuestas y espectro de frecuencias
 
-En resumen, la **Transformada de Fourier** es una herramienta fundamental en el análisis de señales, ya que permite ver qué partes de la señal pueden estar causando problemas y cómo optimizar su transmisión para mejorar la calidad de la red.  
+Consideremos una señal que resulta de la suma de tres sinusoides de diferente frecuencia. Esta señal se puede expresar como:
 
----
+x(t) = A_1 \sin(2\pi f_1 t) + A_2 \sin(2\pi f_2 t) + A_3 \sin(2\pi f_3 t)
 
-### * Pregunta 2: Señales compuestas y espectro de frecuencias**  
+Aquí:
+	•	A_1, A_2 y A_3 son las amplitudes de cada componente.
+	•	f_1, f_2 y f_3 son las frecuencias correspondientes.
 
-En muchas aplicaciones de redes, las señales transmitidas no son simples ondas sinusoidales, sino que están formadas por una combinación de varias frecuencias.  
+En el dominio del tiempo, la señal es la suma de tres ondas que se superponen, lo que genera una forma compleja. Sin embargo, al aplicar la Transformada de Fourier, se obtiene una representación en el dominio de la frecuencia:
 
-Si una señal está compuesta por **tres sinusoides** con diferentes frecuencias (\( f_1 \), \( f_2 \), \( f_3 \)), su comportamiento en el **dominio del tiempo** parecerá una onda compleja, con variaciones en amplitud y forma.  
+X(f) = A_1\, \delta(f - f_1) + A_2\, \delta(f - f_2) + A_3\, \delta(f - f_3)
 
-#### * ¿Cómo se ve en el dominio de la frecuencia?**  
-Al aplicar la **Transformada de Fourier**, la señal ya no se ve como una onda en el tiempo, sino como una representación en el **dominio de la frecuencia**. En este caso, aparecerán **tres picos** en la gráfica, cada uno en la posición de su frecuencia respectiva: 
+En esta expresión, \delta(f - f_i) es la función delta de Dirac, que se manifiesta como un pico en la frecuencia f_i con una amplitud proporcional a A_i. Esto significa que en el espectro de frecuencias se observarán tres picos claramente definidos, correspondientes a las frecuencias f_1, f_2 y f_3.
 
-(\( f_1 \), \( f_2 \), \( f_3 \))  
-
-Esto es útil porque permite visualizar de manera clara qué frecuencias están presentes en la señal y si hay alguna interferencia que pueda afectar la comunicación. Además, en sistemas de transmisión digital, esta información es clave para filtrar señales no deseadas y optimizar el uso del canal de comunicación.  
-
----
-
+Esta representación es muy valiosa, pues permite identificar de forma precisa los componentes que conforman la señal y detectar cualquier anomalía o interferencia que se encuentre fuera del rango esperado.
