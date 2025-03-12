@@ -1,7 +1,7 @@
 # ** Ejecución de Servidores y Clientes Simultáneos **
 En esta sección se demuestra la ejecución del servidor y la conexión de múltiples clientes de manera simultánea utilizando sockets TCP en Python.
 
-# ** Ejecución del Servidor (Servidor Multicliente) **
+# ** Ejecución del Servidor **
 El servidor se ejecutó correctamente en un único terminal, escuchando conexiones en el puerto 2010. Este proceso permite la conexión simultánea de varios clientes sin problema alguno. La siguiente imagen muestra la ejecución del servidor:
 
 ![Captura-de-pantalla-2025-03-08-192223.png](https://i.postimg.cc/PqXddWd4/Captura-de-pantalla-2025-03-08-192223.png)](https://postimg.cc/18jkHNnn)
