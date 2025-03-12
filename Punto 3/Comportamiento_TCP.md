@@ -50,9 +50,9 @@ if __name__ == "__main__":
 ## Evidencias de Ejecución
 El gráfico generado muestra cómo la ventana de congestión (`cwnd`) aumenta progresivamente durante transmisiones exitosas y se reinicia a 1 cuando ocurre una pérdida de paquete.
 
-[![Captura-de-pantalla-2025-03-11-210335.png](https://i.postimg.cc/6qJthTbS/Captura-de-pantalla-2025-03-11-210335.png)](https://postimg.cc/7GVFHPkM)
-
 [![Captura-de-pantalla-2025-03-11-210325.png](https://i.postimg.cc/90dVgVvf/Captura-de-pantalla-2025-03-11-210325.png)](https://postimg.cc/QKdRHLNL)
+
+[![Captura-de-pantalla-2025-03-11-210335.png](https://i.postimg.cc/6qJthTbS/Captura-de-pantalla-2025-03-11-210335.png)](https://postimg.cc/7GVFHPkM)
 
 ## Conclusión
 Este script muestra de forma simplificada el comportamiento de TCP bajo condiciones de éxito y pérdida de paquetes. La simulación refleja adecuadamente el funcionamiento del control de congestión basado en TCP Tahoe. Además, la representación gráfica facilita la comprensión visual del comportamiento dinámico de la ventana de congestión.
