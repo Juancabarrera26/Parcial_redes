@@ -10,7 +10,7 @@ Una de las herramientas matemáticas que resulta indispensable en este análisis
 
 La Transformada de Fourier convierte una señal en función del tiempo, x(t), en su representación en el dominio de la frecuencia, X(f). Esto se expresa matemáticamente como:
 
-X(f) = \int_{-\infty}^{\infty} x(t) \, e^{-j 2 \pi f t} \, dt
+(https://chart.googleapis.com/chart?cht=tx&chl=X(f)%20%3D%20%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%20x(t)%20e%5E%7B-j%202%5Cpi%20f%20t%7D%20dt)
 
 Donde:
 	•	X(f) representa la distribución de amplitudes según la frecuencia.
