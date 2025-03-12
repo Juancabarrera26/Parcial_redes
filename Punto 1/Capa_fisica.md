@@ -39,7 +39,7 @@ Donde:
 
 En el dominio del tiempo, la señal es la superposición de tres ondas, lo que genera una forma compleja. Sin embargo, al aplicar la Transformada de Fourier se obtiene una representación en el dominio de la frecuencia:
 
-[![Whats-App-Image-2025-03-12-at-12-59-31-PM.jpg](https://i.postimg.cc/FzPsnzXx/Whats-App-Image-2025-03-12-at-12-59-31-PM.jpg)](https://postimg.cc/rRrkD8md)
+[![Whats-App-Image-2025-03-12-at-12-59-34-PM-1.jpg](https://i.postimg.cc/cLt4Xd9Q/Whats-App-Image-2025-03-12-at-12-59-34-PM-1.jpg)](https://postimg.cc/k29m5Pd4)
 
 En esta expresión, la función *δ(f − fᵢ)* (función delta de Dirac) se manifiesta como un pico en la frecuencia *fᵢ* con una amplitud proporcional a *Aᵢ. Esto significa que en el espectro se observarán tres picos claramente definidos, correspondientes a las frecuencias **f₁, f₂ y f₃*.
 
